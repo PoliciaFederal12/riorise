@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Policia Federal S12</title>
+
+  <style>
+    body {
+      background-color: black;
+    }
+
+    .escondido {
+  display: none !important;
+}
+
+.conteudo {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-top: 10px;
+  /* Remova estas linhas: */
+  /* position: absolute; */
+  /* top: 50; */
+}
+
+.botoes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.botao-menu {
+  padding: 8px 15px;
+  cursor: pointer;
+  background-color: lightgray;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.botao-ativo {
+  background-color: lightblue;
+}
+
+  /*****************************************/
+
+  h1 {
+    text-align: center;
+
+  }
+  #subtexto {
+  color: lightblue;
+  text-align: center;
+}
+  /* ALBUM DE FOTOS */
+  
+  .album-container {
+      width: 100%;
+      overflow-x: auto; /* Habilita a rolagem horizontal */
+      white-space: nowrap; /* Impede que as imagens quebrem para a próxima linha */
+      padding: 10px;
+    }
+
+    .album-container img {
+      width: 200px; /* Largura de cada imagem */
+      height: auto;
+      margin-right: 10px; /* Espaçamento entre as imagens */
+      display: inline-block; /* Permite que as imagens fiquem lado a lado */
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  /*****************************/
+  
+  #rodape {
+    
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    
+  }
+  
+  #cod {
+    
+    font-weight: bold;
+    
+  }
+  </style>
+</head>
+<body>
+  <img src="https://i.imgur.com/6ZkoXuv.png" width="100%" height="100%">
+  <hr>
+
+  <h1 style="color: white;">Bem vindo(a) ao site da PF servidor 12</h1>
+  <div id="subtexto">
+    Explore aqui informações essenciais sobre regulamentos,
+    códigos penais e aspectos relevantes para sua função na Polícia.
+    <br><br>
+    Role a página para descobrir mais detalhes.
+  </div>
+
+  <br><br>
+  
+ /***********************************/
+ /*      ALBUM DE FOTOS DA PF       */
+ /***********************************/
+ 
+ <div class="album-container">
+    
+   <img src="https://i.imgur.com/OjWxRyW.jpeg" alt="Imagem 1">
+   <img src="https://i.imgur.com/soGlBCT.jpeg" alt="Imagem 2">
+   <img src="https://i.imgur.com/algBYkE.jpeg" alt="Imagem 3">
+   <img src="https://i.imgur.com/da2S3Lg.jpeg" alt="Imagem 4">
+   <img src="https://i.imgur.com/O1uSVcO.jpeg" alt="Imagem 5">
+   <img src="https://i.imgur.com/5bqbBQC.jpeg" alt="Imagem 6">
+   
+   
+ </div>
+  
+  
+  
+  
+ /***********************************/
+ /*      CONTEUDO DE BOTÕES         */
+ /***********************************/
+  <div class="botoes-container">
+    <button class="botao-menu" data-alvo="codigoPenal">Código Penal</button>
+    <button class="botao-menu" data-alvo="bibliaRP">Biblia RP</button>
+    <button class="botao-menu" data-alvo="codigoQ">Código Q</button>
+    <button class="botao-menu" data-alvo="regrasPF">Regras da PF</button>
+    <button class="botao-menu" data-alvo="escrivao">Escrivão</button>
+    <button class="botao-menu" data-alvo="tatico">Tatico</button>
+    <button class="botao-menu" data-alvo="agente">Agente</button>
+    <button class="botao-menu" data-alvo="guarda">Guarda</button>
+    <button class="botao-menu" data-alvo="hospital">Hospital</button>
+    <button class="botao-menu" data-alvo="rodoviaria">Rodoviaria</button>
+    <button class="botao-menu" data-alvo="prisao">Prisão</button>
+    <button class="botao-menu" data-alvo="patrulhamento">Patrulhamento</button>
+    <button class="botao-menu" data-alvo="material">Material</button>
+</div>
+
+<div id="codigoPenal" class="conteudo escondido">
+  *Crimes de 1 ☆
+    <br><br>
+TDF - Tentativa de fuga (art351)
+    <br>
+Agressão- (129)
+    <br><br>
+*Crimes de 2 ☆☆
+    <br><br>
+Dop - desobediência a ordem policial (330)
+    <br>
+Aac - apologia ao crime
+    <br>
+Ldd - lavagem de dinheiro
+    <br>
+Mp - multas pendentes
+    <br>
+Ddv - desmanche de veículos iilegal
+    <br>
+Idp - invasão de propriedade
+    <br>
+Rdv - roubo de veículo
+     <br><br>
+*Crimes de 3 ☆☆☆
+     <br><br>
+Tdh - tentativa de homicídio (art:.121)
+    <br>
+Tdd - tráfico de drogas (art:.33)
+    <br>
+Tda - tráfico de armas (art:.18)
+    <br>
+Pia - port iilegal de armas
+    <br>
+Odsf - obtenção de $ sujo/falso
+     <br><br>
+*Crimes  de 4 ☆☆☆☆
+     <br><br>
+Assedio - suborno
+    <br>
+Desacato - desacato (art:.331)
+    <br>
+Homicídio - homicídio (art:.121)
+     <br><br>
+*Crimes de 5 ☆☆☆☆☆
+     <br><br>
+Suborno - suborno (art:. 363)
+    <br>
+Corrupção - corrupção (art:.333)
+    <br>
+Estelionato - estelionato (art:.171)
+    <br>
+Aap - atentado ao poder
+    <br>
+Ada - abuso de autoridade (art:.4)
+    <br>
+Rdve - roubo de veiculo ermegencial
+    <br>
+     <br><br>
+*Crimes  de  6 ☆☆☆☆☆☆
+     <br><br>
+Sequestro - sequestro (art:.148)
+    <br>
+Racismo - racismo
+    <br>
+Estrupo - Estrupo
+    <br>
+Dpos - descriminação por orientação sexual
+</div>
+<div id="bibliaRP" class="conteudo escondido">
+  4.REGRAS DA BíBLlA RP
+ <br><br>
+  4.1 É proibido MDM (MASS DEATH MATH) -
+<br>
+Matar ou causar dano em três ou mais jogadores  sem motivo válido. Prisão 60 minutos /Aviso / Ban 3-7 dias.
+ <br><br>
+4.2 É proibido RDM (RANDOM DEATH MATCH)
+<br>
+Trocação aleatória, ou seja, entrar em uma ação sem estar envolvido. I prisão 60 minutos I Ban 1 — 3 dias.
+ <br><br>
+4.3 É proibido VDM (VEICLE DEATH MATCH)
+<br>
+ Ato de atropelar os players I prisão 60 minutos / Ban 1 - 5 dias.
+ <br><br>
+4.4 É proibido MG (METAGAMING)
+<br>
+Consiste em trazer informações de fora do jogo para benefício ou prejudicar outro player I prisão 60 minutos I Ban 1 - 3 dias Nota: usar emotions como "=D" é proibido no chat IC.
+ <br><br>
+4.5 É proibido CL (COMBAT LOG)
+<br>
+Sair do jogo em uma ação para se beneficiar, ou seja, para não ser sequestrado,  morto ou preso. I prisão 60 minutos I Ban 1 — 3 dias.
+ <br><br>
+4.6 Extremamente proibido DM (DEATH MATCH)
+<br>
+Matar ou causar dano sem motivo algum. I prisão  60 minutos I Ban 1 — 3 dias.
+ <br><br>
+4.7 É proibido RK (REVENGE KILL)
+<br>
+Matar ou causar dano em um jogador com objetivo de vingança por ter sido morto em outra vida I prisão 60 minutos I Ban 1- 3 dias.
+ <br><br>
+4.8 É proibido SK (SPAWN KILL)
+<br>
+Matar ou causar dano no território de qualquer facção / organização, no local de spawn do jogador. I prisão 60 minutos I Ban 1 — 5 dias.
+<br><br>
+4.9 É proibido TK (TEAM KILL)
+<br>
+Matar ou causar  dano em um membro da sua própria facção ou facção aliada sem razão nenhuma I prisão 60 minutos I Ban 1 — 5 dias.
+ <br><br>
+4.10 É proibido Cop-Bait Forçar ação policial com insulto I prisão 60 minutos I Ban 1 — 5 dias.
+ <br><br>
+4.11 É extremamente proibido cometer SAAV (SEM AMOR A VIDA)
+<br>
+O ato de não se importar se vai morrer no jogo. É o ato de escolher morrer do que cooperar com a ação I prisão 60 minutos I Ban 1 - 5 dias.
+ <br><br>
+4.12 É proibido PG (POWER GAMING)
+<br>
+É o ato de fazer algo que não seria possível na vida real I prisão 40 minutos I Ban 1 — 5 dias.
+ <br><br>
+Nota: Subir com veículo em uma montanha íngreme, no qual um veículo normal não subiria.
+ <br><br>
+Nota: Rampar de lugares que na vida real seria impossível fazer tal ação para dar fuga da polícia.
+ <br><br>
+4.13 É proibido (Bunny-Hop)
+<br>
+Ato de correr e pular ao mesmo tempo para obter vantagem Chute I prisão 40 minutos I Ban 1 - 5 dias.
+   <br><br>
+4.14 É proibido (FLAMING RP)
+<br>
+É o uso de discurso de ódio ou ofensas para os players I Punição de acordo com a gravidade do flaming prisão 60 minutos / Mute 60+ minutos / ban 1- 30 dias.
+ <br><br>
+4.15 É proibido IFP (INFORMAÇÕES FORA DO PERSONAGEM)
+<br>
+É quando você usa as informações que aparece na tela (nome, vida) I prisão 40 minutos I Ban 1 - 5 dias.
+ <br><br>
+4.16 É proibido ZZ (ZIG ZAG)
+<br>
+Seria quando você corre em zigue-zague para desviar de balas I prisão 40 minutos I Ban 1 — 5 dias.
+ <br><br>
+4.17 É proibido KOS (MATE A VISTA)
+<br>
+É quando você mata alguém de org/facção/família a vista sem motivo, por exemplo, na vida real você não mataria uma pessoa apenas por ela ser um policial I prisão 60 minutos I Ban 1 - 5 dias.
+ <br><br>
+4.18 É proibido PK (PLAYER KILL)
+<br>
+Significa "morte ao jogador". No PK, você perde toda a memória da pessoa que te matou e do evento que levou a sua morte I prisão 60 minutos I Ban 1 - 5 dias.
+ <br><br>
+4.19 É proibido RPFW( ROLEPLAY FOR THE WIN)
+<br>
+Significa desenvolver um papel onde só você ganha, pois na vida real, você nunca vai ganhar sempre I prisão 40 minutos I Ban 1 — 5 dias.
+ <br><br>
+4.20 É proibido (MIX)
+<br>
+Que significa misturar assuntos de fora do RP no RP I prisão 60 minutos I Ban 1 — 5 dias.
+ <br><br>
+4.21 É proibido a criação de várias contas para transferir dinheiro para a conta principal I Ban 10 - 30 dias.
+<br><br>
+4.22 É proibido ATP( ATRAPALHAR AÇÃO PROPOSITALMENTE)
+<br>
+Por exemplo quando você atrapalha uma abordagem batendo nos outros, gritando no voip, flodando no chat, etc I prisão 60 minutos I Ban 1-3 dias.
+<br><br>
+4.23 É proibido DMA (DEATH MATCH AUTO)
+<br>
+ Proibido causar danos a veículos públicos ou pessoais sem motivo. chute| prisão 40 minutos.
+ <br><br>
+4.24 É proibido NRA( NON ROL AMBIENTE)
+<br>
+ Utilizar arma em locais públicos, como hospital e delegacia I chute/prisão 40 minutos I Ban 1-3 dias.
+ <br><br>
+4.25 É proibido NDR (NON DRIVE RP)
+<br>
+Significa dirigir qualquer veículo em condições impossíveis para ele, bem como dirigir de maneira implausível. Chute/ prisão 40 minutos.
+ <br><br>
+4.26 É proibido AI (Ação Irregular)
+<br>
+É o ato de invadir ou ficar ao redor de propriedades privadas de outros jogadores como casas e mansões com intuito de forçar uma ação.| Ban 3/5 dias, caso seja família em ação conjunta sujeita a aviso/ Ban IP
+ <br><br>
+4.27 É proibido INA (INVASÃO NÃO AUTORIZADA)
+<br>
+É o ato de invadir locais como organizações/Corporações  Sem autorização prévia da prefeitura |Ban 1/5 dias
+</div>
+<div id="codigoQ" class="conteudo escondido">
+  <big><b>QAP</b></big> - Na escuta?
+    <br><br>
+    <big><b>QSL</b></big> - Entendido/Entendi
+    <br><br>
+    <big><b>QSV/VTR</b></big> - Viatura
+    <br><br>
+    <big><b>QTI</b></big> - Indo a Localização
+    <br><br>
+    <big><b>QTH</b></big> - Localização(ex: Qual sua QTH?| Minha QTH é Hospital)
+    <br><br>
+    <big><b>QRR</b></big> - Emergencia total, pedido de ajuda(Só usado em casos extremos)
+    <br><br>
+    <big><b>TKS</b></big> - Obrigado
+    <br><br>
+    <big><b>QRA</b></big> - Patente/Cargo
+</div>
+<div id="regrasPF" class="conteudo escondido">
+  Turno de trabalho é das 08:00 ás 00:00, durante esse período cada funcionário deve estar em serviço. É possível dividir em turnos.
+<br><br>
+- Proibido tiros de taser em veículos em movimento,
+<br><br>
+- Obrigatório patrulhar com 3 policiais na VTR. Só podem patrulhar com uma patente maior, ou com autorização do comandante.
+<br><br>
+- Disparos de arma de fogo em perseguição só é autorizado caso o bandido abra fogo contra civis ou VTR.
+<br><br>
+- Os policiais podem pedir reforço de uma viatura com 2 policiais a mais, sempre com uma viatura a mais do que carro de bandidos.
+<br><br>
+- Todo policial a paisana tem autorização para reagir a tentativas de assalto.
+<br><br>
+- Para revistar uma mulher é necessário ter uma policial feminina, ou com o consentimento autorizado no chat.
+<br><br>
+- Se o cidadão apresentar perigo na abordagem, o policial tem o direito de algemar.
+<br><br>
+- Nenhum jogador deve atrapalhar a comunicação de um policial e outro cidadão. (Sons altos, xingamentos)
+<br><br>
+- Antes de colocar o preso na VTR, é necessário explicar o motivo da apreensão e o tempo de prisão. 
+<br><br>
+- Caso levante as mãos para cima, está rendido e não pode reagir.
+<br><br>
+- A polícia não deve impedir o trabalho dos advogados dentro do presídio. (Advogados não podem liberar presos administrativos)
+</div>
+<div id="escrivao" class="conteudo escondido">
+  <big><b>Escrivão:</b></big> Desempenha um papel crucial de alta responsabilidade, atuando como elo entre as equipes táticas e a liderança do Delegado.
+ <br><br>
+ Suas principais responsabilidades incluem o atendimento integral às necessidades das equipes táticas e a organização estratégica de pontos-chave como Hospital (HP), Prisão (PS) e Rodoviaria (RDV), exercendo sua autoridade como superior imediato.
+ <br><br>
+ A presença constante de um Escrivão é fundamental, especialmente no Hospital e na Prisão, onde sua atuação possui maior impacto e autonomia.
+ <br><br>
+ A comunicação via "/d" segue um protocolo: a prioridade é a comunicação dos Delegados. Apenas na ausência destes, o Escrivão tem permissão para utilizar o canal.
+ <br><br>
+ A remoção de estrelas de procurado e a cassação de licenças são atribuições delegadas exclusivamente aos Delegados. Excepcionalmente, sob ordem superior ou na ausência de superiores, o Escrivão poderá realizar a remoção de estrelas.
+ <br><br>
+ A política de remoção de estrelas de procurado se aplica especificamente a membros do Exército Brasileiro (EB), da Mídia e funcionários do Hospital.
+    <br><br>
+ <p>
+  <big><b>Escrivão e o Acesso ao Armamento:</b></big> O Escrivão possui <b>livre acesso à sala de armamentos</b>. Essa prerrogativa é inerente ao cargo, dada a sua <b>responsabilidade crucial no controle e na gestão do acesso</b> a este setor sensível.
+</p>
+<br>
+<p>
+  No que concerne ao <b>armamento do Escrivão</b>, este tem a <b>liberdade de utilizar qualquer arma disponível no arsenal</b> da corporação.
+</div>
+<div id="tatico" class="conteudo escondido">
+  <big><b>Tático:</b></big> Pilar Operacional da Polícia Federal
+<br><br>
+Os Táticos representam a essencial linha de frente da Polícia Federal, incumbidos da crucial missão de proteger a população através de ações de patrulhamento, prisões e, em situações extremas, confronto direto.
+<br><br>
+São os principais responsáveis pela efetivação de prisões e a força determinante na resolução de motins e distúrbios no sistema prisional.
+<br><br>
+O cumprimento do seu dever exige presença ativa nas ruas e em locais estratégicos como o Hospital (HP), a Rodoviária (RDV) e a Prisão (PS), além de oferecerem suporte operacional ao Escrivão, seu superior hierárquico.
+<br><br>
+A comunicação pelo canal "/d" é uma prerrogativa dos Delegados. Excepcionalmente, na ausência destes, os Escrivões podem utilizar essa ferramenta.
+<br><br>
+É terminantemente proibido aos Táticos a remoção de estrelas de procurado ou a alteração de licenças de jogadores. O descumprimento desta norma acarreta severas sanções, incluindo exoneração ou rebaixamento.
+    <br><br>
+    <p>
+  <big><b>Armamento Tático:</b></big> O equipamento padrão para a equipe Tática inclui <b>Colete</b> e <b>Cacetete</b>. Além disso, é permitido o uso de uma das seguintes armas de fogo: <b>M5</b> ou <b>Shotgun</b> (a escolha fica a critério operacional). Complementam o armamento o <b>Taser</b> e a pistola <b>Desert Eagle</b>.
+</p>
+<br>
+<p>
+  <mark><b>Atenção:</b></mark> O acesso a sala de armas, so apenas com autorização dos superiores! O uso do fuzil <b>M4 é restrito</b>, sendo de <b>uso exclusivo de superiores</b>. No entanto, a utilização da M4 é <b>permitida em situações de ações especiais</b>, mediante aprovação e necessidade operacional.
+</div>
+<div id="agente" class="conteudo escondido">
+  <big><b>Agente de Polícia:</b></big> O Pilar de Apoio e o Primeiro Passo Ostensivo
+<br><br>
+O Agente de Polícia tem a responsabilidade fundamental de prestar apoio tanto aos seus superiores quanto aos Guardas, diferenciando-se destes pela capacidade de efetuar prisões.
+<br><br>
+Este cargo marca o início do seu trabalho ostensivo, uma fase crucial de treinamento para futuros Táticos. É essencial acompanhar de perto os superiores para adquirir experiência prática nas ruas.
+<br><br>
+O dever primordial do Agente de Polícia é estar ao lado de seus superiores, absorvendo o conhecimento e as práticas que moldam a atuação de um Tático.
+<br><br>
+O uso do canal "/d" (rádio da organização) é estritamente proibido, com risco de exoneração em caso de descumprimento. Nem Táticos nem Escrivães têm permissão para utilizá-lo, exceto o Escrivão na ausência de Delegados e outros superiores.
+<br><br>
+A remoção de estrelas de procurado ou a cassação de licenças também são expressamente proibidas. O uso de VTR (Viatura) é restrito, sendo permitido apenas sob ordem direta de um superior.
+    <br><br>
+<p>
+  <big><b>Acesso Restrito ao Arsenal de Armas:</b></big> O <b>acesso ao arsenal de armas é estritamente proibido</b>, exceto mediante <b>autorização expressa</b> de um <b>Escrivão</b>, <b>Delegado</b> ou do <b>Chefe de Polícia</b>.
+</p>
+<br>
+<p>
+  <big><b>Armamento do Agente Policial:</b></big> O armamento padrão permitido ao Agente Policial compreende o <b>Colete</b>, o <b>Cacetete</b> e o <b>Taser</b>. A utilização de qualquer outro tipo de armamento é <b>expressamente proibida</b>.
+</div>
+<div id="guarda" class="conteudo escondido">
+  <big><b>Guarda Municipal:</b></big> O ponto de partida na Polícia Federal, uma fase crucial onde a dedicação e o esforço são essenciais para o seu crescimento na corporação.
+</p>
+<br>
+<p>
+  O <b>dever</b> de um Guarda Municipal abrange a <b>defesa</b>, o <b>cuidado</b> e a <b>zeladoria</b> do Departamento de Polícia (DP). Isso inclui a <b>proteção interna e externa</b> das instalações, além do importante papel de <b>recepcionar e atender</b> às demandas tanto de civis quanto de outros policiais.
+</p>
+<br>
+<p>
+  Para o Guarda Municipal, este é o momento de <b>dedicar-se ao estudo das regras internas da Polícia e do Regulamento Disciplinar (RP)</b>. Aproveite esta etapa! Em breve, você poderá ascender ao cargo de Agente e iniciar o treinamento ostensivo.
+</p>
+<br>
+<p>
+  <mark><b>Atenção:</b></mark> É <b>expressamente proibido</b> ao Guarda Municipal remover estrelas e licenças de outros membros. Além disso, é <b>vedado</b> dirigir VTR (Viatura) ou utilizar o chat "/d". O descumprimento dessas normas pode levar à <b>expulsão</b> da Polícia.
+</p>
+<br>
+<p>
+  O <b>acesso à sala de armas é restrito</b> e só pode ser realizado com a <b>permissão explícita</b> de um Escrivão, Delegado ou Chefe de Polícia.
+</p>
+<br>
+<p>
+  O armamento permitido ao Guarda Municipal consiste em <b>Cacetete</b> e <b>Colete</b>. O uso de qualquer outro tipo de arma é <b>estritamente proibido
+</div>
+<div id="hospital" class="conteudo escondido">
+  <h2>Hospital: Centro de Prioridade e Ordem</h2>
+<p>O Hospital de nossa cidade é um ponto crucial, com <strong>prioridade máxima</strong> em nossa organização, sobrepondo-se inclusive à Rodoviária (RDV).</p>
+<p>Constantemente, o hospital recebe cidadãos em busca de cuidados médicos. Contudo, em meio a eles, ocasionalmente surgem indivíduos que perturbam a ordem e desrespeitam o ambiente hospitalar.</p>
+<p>No Hospital (HP), a presença de <strong>três oficiais</strong> é mandatória. Destes, <strong>um deve ser Escrivão</strong>. Essa exigência se deve à eventual presença de médicos de alta patente, cuja remoção, em certas situações (ordem superior ou ausência de oficial de patente superior), é prerrogativa do Escrivão.</p>
+<p><strong>Escrivães</strong> têm a responsabilidade de supervisionar e coordenar as ações dos Táticos no local, mantendo vigilância constante sobre todos.</p>
+<p><strong>Táticos</strong> devem estrita obediência a seus superiores, acatando suas ordens sem questionamentos, compreendendo que a experiência como Tático é fundamental para sua futura ascensão à função de Escrivão.</p>
+<p>O <strong>objetivo primordial</strong> de elevar o Hospital ao status de ponto prioritário reside no intenso fluxo de pessoas e na necessidade de garantir a segurança dos profissionais da saúde.</p>
+<p><strong>Não é permitido</strong> que policiais permaneçam ociosos fora das dependências do Hospital. Tampouco é permitido que policiais abandonem o interior do hospital para perseguir indivíduos com o intuito de realizar prisões. Nossa prioridade é a manutenção da ordem <strong>DENTRO DO HP</strong>.</p>
+<p><strong>Exceção:</strong> Durante o recrutamento de novos membros para o corpo médico no Hospital, policiais podem atuar na área externa para auxiliar no controle de distúrbios, garantindo que os médicos possam conduzir seu RolePlay (RP) de recrutamento de forma eficaz.</p>
+<p><strong>Atenção:</strong> É expressamente proibido envolver-se em conversas alheias sem convite. O Hospital está sob a jurisdição dos médicos, e nossa função principal é o controle e a segurança dos civis.</p>
+<p>Dentro do Hospital, são <strong>estritamente proibidas</strong> condutas como correr, pular, reproduzir música no voip ou desrespeitar qualquer pessoa, sejam civis, médicos ou policiais.</p>
+
+</div>
+<div id="rodoviaria" class="conteudo escondido">
+  <h2>Rodoviária: Atenção e Segurança em um Ponto Vital da Cidade</h2>
+<p>A Rodoviária não é a prioridade máxima da polícia, mas reconhecemos sua importância como um local crucial para o trabalho dos cidadãos em nossa cidade, demandando nossa atenção.</p>
+<p>O envio de efetivo policial para a Rodoviária (RDV) deve ocorrer somente após verificarmos que o Hospital (HP) e a Prisão (PS) possuem contingentes suficientes, dada a maior prioridade desses locais.</p>
+<p>Na Rodoviária, a presença de, no mínimo, <strong>três policiais</strong> é necessária, sendo <strong>um deles Escrivão</strong>. A habilidade do Escrivão em lidar com Boletins de Ocorrência (B.O.) é fundamental para resolver qualquer situação que envolva civis no local.</p>
+<p>A atuação na RDV apresenta um nível de complexidade, pois os policiais em serviço estão expostos a potenciais ataques. Portanto, manter o <strong>alerta total</strong> é imprescindível para a segurança da equipe.</p>
+<p>Em situações de múltiplos Veículos Deliberadamente Mirados (VDM), a recomendação é que os policiais permaneçam no interior das viaturas (VTR), onde estarão mais protegidos contra esse tipo de agressão.</p>
+<p>Em casos extremos, onde a prisão do agressor não for possível, a <strong>permissão para o abate</strong> é concedida como último recurso.</p>
+
+</div>
+<div id="prisao" class="conteudo escondido">
+  <h2>Presídio: Prioridade, Segurança e Ordem</h2>
+<p>O Presídio (PS) compartilha o status de prioridade com o Hospital (HP) em nossa organização. Neste local, a presença policial é essencial para atender às necessidades dos detentos, como visitas de Advogados (ADV) e alimentação.</p>
+<p>A entrada de Advogados no presídio é <strong>obrigatória</strong>, e devemos oferecer total suporte aos profissionais no local. No entanto, é crucial observar que Advogados com a tag de <strong>CRIMINOSO</strong> estão <strong>proibidos</strong> de ingressar no presídio para exercer sua função.</p>
+<p>Detentos presos por ordem do Administrador (ADM) têm direito apenas à alimentação, <strong>não</strong> à assistência de advogados. Aqueles detidos por policiais só poderão ser conduzidos aos advogados após cumprirem os primeiros <strong>10 minutos</strong> de prisão.</p>
+<p><strong>Todos os presos têm direito à alimentação!</strong></p>
+<p><strong>Não é recomendado</strong> conduzir presos sem a utilização de algemas, visando a segurança de todos.</p>
+<p>A concessão de banho de sol fica a critério dos policiais de plantão. Caso o preso demonstre bom comportamento, o banho pode ser autorizado, mas é fundamental estar ciente do potencial risco de fuga.</p>
+<p>Os policiais em serviço no presídio devem manter vigilância constante sobre os presos, atentos a possíveis tentativas de abrir celas e iniciar rebeliões, que podem colocar em risco a vida dos oficiais. <strong>Qualquer preso que sair de sua cela sem permissão pode ser abatido por qualquer policial presente.</strong></p>
+<p>O Escrivão tem a <strong>obrigação</strong> de zelar pela organização e segurança do presídio, controlando o fluxo de presos e advogados para evitar qualquer situação fora de controle.</p>
+<p>Policiais designados para o Presídio (PS) devem possuir um forte preparo psicológico, pois estarão sujeitos a diversas formas de desrespeito por parte dos detentos.</p>
+<p><strong>Atenção!</strong> Policiais femininas <strong>não</strong> podem realizar plantão no PS (Presídio) sem a autorização expressa do Chefe de Polícia. Esta medida visa protegê-las do vocabulário machista e depreciativo que os detentos podem utilizar.</p>
+<p><strong>Não é permitido</strong> que Agentes Policiais permaneçam sozinhos na Prisão. A presença de um superior é sempre necessária. Caso todos os superiores precisem se ausentar, recomenda-se que o agente também se retire do local.</p>
+<p><strong>Aviso Urgente:</strong> Qualquer indivíduo que tentar invadir as instalações do Presídio (PS) será imediatamente neutralizado.</p>
+
+  
+</div>
+<div id="patrulhamento" class="conteudo escondido">
+  <h2>Patrulhamento: A Presença da Lei nas Ruas</h2>
+<p>O patrulhamento é o momento em que aqueles que vivem à margem da lei mais temem, pois é quando a polícia se mobiliza para capturar indivíduos com mandados de prisão pendentes.</p>
+<h3>Regras Básicas para o Patrulhamento:</h3>
+<ol>
+  <li>Antes de iniciar o patrulhamento, é <strong>obrigatório</strong> obter a permissão de um Delegado ou Chefe de Polícia.</li>
+  <li>Cada viatura pode conter no máximo <strong>três policiais</strong>.</li>
+  <li>O patrulhamento deve ser realizado por policiais com cargo de Tático ou superior. A composição da viatura <strong>nunca</strong> deve ser de três Táticos; é sempre necessário ter no mínimo <strong>um Escrivão ou Delegado</strong> presente.</li>
+  <li>Antes de abordar um suspeito, <strong>anuncie sua chegada utilizando o comando /m</strong> (megafone).</li>
+  <li>Ao abordar um indivíduo, inicie uma conversa, explique o motivo da abordagem de forma clara e mantenha uma postura <strong>educada</strong>.</li>
+  <li>Caso o abordado represente uma ameaça, ele poderá ser <strong>algemado</strong> para segurança dos policiais e terceiros.</li>
+  <li>Em situações onde o número de suspeitos for superior ao de policiais na viatura, <strong>não desembarque</strong>. Negocie a rendição e prisão. Caso não haja cooperação, registre a ação em vídeo e denuncie o ocorrido no Discord.</li>
+  <li>Durante uma abordagem, <strong>nenhum outro policial ou qualquer um não envolvido diretamente, não pode interferir</strong>, pois essa ação é considerada Anti-RolePlay (Anti-RP).</li>
+  <li>Ao realizar a prisão de membros de facções como Mafia, Família, Roxo ou Verde, esteja ciente de que eles podem tentar impedir a prisão, perseguindo a viatura durante o transporte do detento.</li>
+  <li>É <strong>fundamental gravar todas as situações</strong> de patrulhamento e abordagens.</li>
+  <li>É <strong>estritamente proibido</strong> ultrapassar a ponte localizada ao lado do Exercito Brasileiro (EB), pois aquela área não está sob nossa jurisdição.</li>
+</ol>
+
+</div>
+<div id="material" class="conteudo escondido">
+  <h2>Material/Arsenal: Nossas Ferramentas de Trabalho Essenciais</h2>
+<p>O Material/Arsenal representa uma parte crucial de nossa corporação, pois é onde se encontram nossas ferramentas de trabalho fundamentais para o cumprimento de nossas funções.</p>
+<h3>Gerenciamento de Materiais e Limites:</h3>
+<p>O acesso ao arsenal é controlado por um sistema de limites de materiais por hora para cada membro da Polícia Federal.</p>
+<p><strong>Todos os membros da Polícia Federal possuem um limite de uso de 460 unidades de material por hora.</strong></p>
+<h3>Custos de Material por Equipamento:</h3>
+<ul>
+  <li>Cacetete - <strong>40</strong> Material</li>
+  <li>Taser - <strong>198</strong> Material</li>
+  <li>Desert Eagle - <strong>188</strong> Material</li>
+  <li>Shotgun - <strong>168</strong> Material</li>
+  <li>MP5 - <strong>217</strong> Material</li>
+  <li>M4 - <strong>300</strong> Material</li>
+  <li>Colete - <strong>90</strong> Material</li>
+</ul>
+<h3>Restrição de Limite e Boas Práticas:</h3>
+<p>Caso o limite de 460 unidades seja excedido, seu contador de material só será resetado para 0 após o período de <strong>1 hora (a cada PayDay)</strong>.</p>
+<p>Pedimos a todos que utilizem o arsenal com <strong>bom senso</strong>. Evitem retirar armamentos a cada hora e poupem nossos recursos. Adquiram apenas o necessário e somente quando houver real necessidade.</p>
+<h3>Restrições de Acesso por Cargo:</h3>
+<p>Cargos de <strong>Táticos, Agente Policial e Guarda Municipal não possuem acesso livre ao Arsenal de armas</strong>. A retirada de qualquer equipamento deve ser sempre precedida de permissão de um superior. <strong>Qualquer membro flagrado roubando armamento será sumariamente exonerado da Polícia.</strong></p>
+
+</div>
+
+<script>
+    let conteudoAtivo = null;
+    let botaoAtivo = null;
+
+    function mostrarConteudo(alvoId, botaoClicado) {
+      const conteudoAlvo = document.getElementById(alvoId);
+
+      if (botaoAtivo === botaoClicado) {
+        conteudoAlvo.classList.add('escondido');
+        botaoClicado.classList.remove('botao-ativo');
+        conteudoAtivo = null;
+        botaoAtivo = null;
+      } else {
+        if (botaoAtivo) {
+          botaoAtivo.classList.remove('botao-ativo');
+        }
+        if (conteudoAtivo && conteudoAtivo !== conteudoAlvo) {
+          conteudoAtivo.classList.add('escondido');
+        }
+
+        botaoClicado.classList.add('botao-ativo');
+        conteudoAlvo.classList.remove('escondido');
+
+        conteudoAtivo = conteudoAlvo;
+        botaoAtivo = botaoClicado;
+      }
+    }
+
+    const botoesMostrarEsconder = document.querySelectorAll('.botao-menu');
+    botoesMostrarEsconder.forEach(botao => {
+      botao.addEventListener('click', function() {
+        const alvoId = this.getAttribute('data-alvo');
+        mostrarConteudo(alvoId, this);
+      });
+    });
+  </script>
+
+
+
+  <br><br>
+  <div id="rodape">
+  Todos os direitos reservados @2025 Dean_Smith
+  </div>
+</body>
+</html>
