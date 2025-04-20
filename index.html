@@ -36,8 +36,6 @@
   background-color: lightgray;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 .botao-ativo {
@@ -56,21 +54,41 @@
 }
   /* ALBUM DE FOTOS */
   
-  .album-container {
-      width: 100%;
-      overflow-x: auto; /* Habilita a rolagem horizontal */
-      white-space: nowrap; /* Impede que as imagens quebrem para a próxima linha */
-      padding: 10px;
+    .album-container {
+        width: 100%;
+        overflow-x: auto; /* Habilita a rolagem horizontal */
+        white-space: nowrap; /* Impede que as imagens quebrem para a próxima linha */
+        padding: 10px;
     }
 
     .album-container img {
-      width: 200px; /* Largura de cada imagem */
-      height: auto;
-      margin-right: 10px; /* Espaçamento entre as imagens */
-      display: inline-block; /* Permite que as imagens fiquem lado a lado */
-      border: 1px solid #ccc;
-      border-radius: 5px;
+        width: 150px; /* Largura inicial menor para melhor visualização */
+        height: auto;
+        margin-right: 10px; /* Espaçamento entre as imagens */
+        display: inline-block; /* Permite que as imagens fiquem lado a lado */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer; /* Indica que a imagem é clicável */
+        transition: transform 0.3s ease; /* Adiciona uma transição suave para o zoom */
     }
+
+    .album-container img.zoomed {
+        position: fixed; /* Fixa a imagem na tela */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1); /* Inicialmente, a escala é 1 */
+        width: auto; /* Ajusta a largura automaticamente */
+        height: auto; /* Ajusta a altura automaticamente */
+        max-width: 95vw; /* Largura máxima de 95% da largura da viewport */
+        max-height: 95vh; /* Altura máxima de 95% da altura da viewport */
+        z-index: 1000; /* Garante que a imagem fique acima de outros elementos */
+        border: none;
+        border-radius: 0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra para destaque */
+        background-color: rgba(255, 255, 255, 0.9); /* Fundo levemente transparente para melhor foco */
+        padding: 10px; /* Adiciona um pequeno padding interno */
+    }
+
   /*****************************/
   
   #rodape {
@@ -100,23 +118,26 @@
     Role a página para descobrir mais detalhes.
   </div>
 
-  <br><br>
-  
- /***********************************/
- /*      ALBUM DE FOTOS DA PF       */
- /***********************************/
+  <br> /* Album de fotos */
  
  <div class="album-container">
-    
-   <img src="https://i.imgur.com/OjWxRyW.jpeg" alt="Imagem 1">
-   <img src="https://i.imgur.com/soGlBCT.jpeg" alt="Imagem 2">
-   <img src="https://i.imgur.com/algBYkE.jpeg" alt="Imagem 3">
-   <img src="https://i.imgur.com/da2S3Lg.jpeg" alt="Imagem 4">
-   <img src="https://i.imgur.com/O1uSVcO.jpeg" alt="Imagem 5">
-   <img src="https://i.imgur.com/5bqbBQC.jpeg" alt="Imagem 6">
-   
-   
- </div>
+    <img src="https://i.imgur.com/OjWxRyW.jpeg" alt="Imagem 1">
+    <img src="https://i.imgur.com/soGlBCT.jpeg" alt="Imagem 2">
+    <img src="https://i.imgur.com/algBYkE.jpeg" alt="Imagem 3">
+    <img src="https://i.imgur.com/da2S3Lg.jpeg" alt="Imagem 4">
+    <img src="https://i.imgur.com/O1uSVcO.jpeg" alt="Imagem 5">
+    <img src="https://i.imgur.com/5bqbBQC.jpeg" alt="Imagem 6">
+</div>
+
+<script>
+    const images = document.querySelectorAll('.album-container img');
+
+    images.forEach(img => {
+        img.addEventListener('click', () => {
+            img.classList.toggle('zoomed');
+        });
+    });
+</script>
   
   
   
